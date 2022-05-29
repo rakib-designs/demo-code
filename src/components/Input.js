@@ -1,21 +1,15 @@
 import React from 'react';
+import style from '../style/Input.module.css';
 
-export default function Input({ type, placeholder, InputValue, setInputValue, inputName }) {
-  
-  const handleChange = (event) => {
-    const name = event.target.name;
-    setInputValue((oldInput) => {
-      return {...oldInput, [name]: event.target.value}
-    })
-  }
+export default function Input({ type, placeholder, InputValue, setInputValue }) {
   
   return (
     <input
+      className={style.input}
       type={type}
       placeholder={placeholder}
-      name={inputName}
       value={InputValue}
-      onChange={() => setInputValue(handleChange)}
+      onChange={(event) => setInputValue(event.target.value)}
     />
   )
 }

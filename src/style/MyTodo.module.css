@@ -1,0 +1,22 @@
+.myTodos {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px 0;
+     background-color: rgb(19, 14, 14);
+     color: aliceblue;
+     padding: 10px;
+}
+
+.paragraph {
+     margin: 5px 0;
+}
+
+.body::first-letter {
+     text-transform: uppercase;
+}
+
+.button {
+     padding: 10px 25px;
+     cursor: pointer;
+}

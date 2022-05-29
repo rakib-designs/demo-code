@@ -1,0 +1,8 @@
+.todoContainer {
+     max-width: 800px;
+     width: 100%;
+     margin: 20px auto;
+     padding: 10px;
+     background-color: rgb(207, 199, 199);
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
